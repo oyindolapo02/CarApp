@@ -1,0 +1,51 @@
+{
+  "kind": "collectionType",
+  "collectionName": "homepcars",
+  "info": {
+    "singularName": "homepcar",
+    "pluralName": "homepcars",
+    "displayName": "homepcar",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "decs": {
+      "type": "text"
+    },
+    "buttonsleft": {
+      "type": "string"
+    },
+    "buttonsright": {
+      "type": "string"
+    },
+    "img": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "categories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::category.category",
+      "inversedBy": "homepcars"
+    },
+    "sub_categories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::subcategory.subcategory",
+      "inversedBy": "homepcars"
+    }
+  }
+}

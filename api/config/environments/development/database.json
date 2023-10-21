@@ -1,0 +1,17 @@
+{
+  "defaultConnection": "default",
+  "connections": {
+    "default": {
+      "connector": "bookshelf",
+      "settings": {
+        "client": "mysql",
+        "host": "localhost",
+        "port": 3306,
+        "database": "apis",
+        "username": "root",
+        "password": "toyosi2468"
+      },
+      "options": {}
+    }
+  }
+}
